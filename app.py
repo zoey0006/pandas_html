@@ -38,12 +38,13 @@ def get_stock_data(stock_symbol):
     return df
 
 def plot_stock(df, stock_symbol):
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(6, 3))
     plt.plot(df["date"], df["close"], label="Closing Price", color="blue")
-    plt.xlabel("Date")
+    plt.xlabel("Date", labelpad=15)
     plt.ylabel("Closing Price (USD)")
     plt.title(f"{stock_symbol} Historical Stock Prices (Last 12 Months)")
     plt.legend()
+    plt.subplots_adjust(bottom=0.3)
 
     # Save the figure to a bytes object
     img = io.BytesIO()

@@ -12,11 +12,11 @@ body {
 
 .container {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 40px; /* Increase padding for more space */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    max-width: 600px; /* Increase width */
+    width: 90%; /* Ensure responsiveness */
     text-align: center;
 }
 
