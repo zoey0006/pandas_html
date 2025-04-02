@@ -16,7 +16,7 @@
         {% if stock_symbol %}
             <h3>Stock Price Graph for {{ stock_symbol }}</h3>
             {% if plot_url %}
-                <img src="data:image/png;base64,{{ plot_url }}" alt="Stock Chart">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Stock Price Chart" style="max-width: 100%; height: auto;">
             {% else %}
                 <p>No data available for {{ stock_symbol }}</p>
             {% endif %}
